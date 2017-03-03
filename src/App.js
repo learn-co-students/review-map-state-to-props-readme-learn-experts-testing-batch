@@ -24,7 +24,6 @@ class App extends Component {
 const connectedComponent = connect(mapStateToProps)(App)
 
 function mapStateToProps(state){
-  debugger;
   return {items: state.items}
 }
 
