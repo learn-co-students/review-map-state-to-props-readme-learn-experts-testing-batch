@@ -10,7 +10,6 @@ class App extends Component {
     this.props.store.dispatch({type: 'GET_COUNT_OF_USERS'})
   }
   render() {
-    debugger;
     return (
       <div className="App">
           <button onClick={this.handleOnClickItems.bind(this)}>Click to change items count</button>
@@ -24,7 +23,6 @@ class App extends Component {
 const connectedComponent = connect(mapStateToProps)(App)
 
 function mapStateToProps(state){
-  debugger;
   return {items: state.items}
 }
 
